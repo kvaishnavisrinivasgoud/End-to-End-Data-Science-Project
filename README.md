@@ -4,10 +4,13 @@ In this project, we will develop a complete data science pipeline, starting from
 
 ## Project Overview
 We will build a House Price Prediction model using a dataset containing features of houses (e.g., square footage, number of bedrooms, location, etc.) and their corresponding prices. The model will be deployed as an API using Flask or FastAPI, allowing users to input house features and receive a predicted price.
-Step 1: Data Collection
+
+
+## Step 1: Data Collection
 We will use the California Housing Dataset from the sklearn.datasets module or a similar dataset from Kaggle (e.g., Kaggle House Prices Dataset).
 
-Step 2: Data Preprocessing
+
+## Step 2: Data Preprocessing
 Handle Missing Values: Check for missing values and handle them (e.g., imputation or removal).
 
 Feature Engineering: Create new features or transform existing ones (e.g., log transformation for skewed data).
@@ -16,13 +19,16 @@ Encoding Categorical Variables: Use one-hot encoding or label encoding for categ
 
 Scaling/Normalization: Scale numerical features to a standard range.
 
-Step 3: Model Training
+
+## Step 3: Model Training
 We will use a Linear Regression model for simplicity, but you can experiment with more advanced models like Random Forest, Gradient Boosting, or Neural Networks.
 
-Step 4: Save the Model
+
+## Step 4: Save the Model
 Save the trained model and scaler using joblib or pickle for later use in the API.
 
-Step 5: Build the API with Flask
+
+## Step 5: Build the API with Flask
 We will use Flask to create a simple API that accepts house features as input and returns the predicted price.
 
 1.Install Flask:
@@ -38,11 +44,16 @@ We will use Flask to create a simple API that accepts house features as input an
 
                       curl -X POST -H "Content-Type: application/json" -d '{"features": [1, 2, 3, 4, 5, 6, 7, 8]}' http://127.0.0.1:5000/predict
 
-Step 6: Deploy the API
+
+## Step 6: Deploy the API
 You can deploy the Flask app using platforms like:
+
 -Heroku
+
 -AWS Elastic Beanstalk
+
 -Google Cloud Run
+
 -Render
 
 For example, to deploy on Heroku:
@@ -54,4 +65,29 @@ For example, to deploy on Heroku:
 3.Push your code to Heroku:
                     heroku create
                     git push heroku main
+
+
+## Step 7: Build a Web App (Optional)
+You can create a simple web interface using HTML and JavaScript to interact with the API.
+
+1.Create an index.html file
+
+2.Serve the HTML file using Flask
+
+
+## Deliverable
+A deployed API or web app that allows users to input house features and receive a predicted price.
+
+The API can be accessed via HTTP requests, and the web app provides a user-friendly interface.
+
+## Next Steps
+Improve the model by experimenting with different algorithms and hyperparameters.
+
+Add more features to the dataset for better predictions.
+
+Enhance the web app with additional functionality and styling.
+
+This project demonstrates the end-to-end process of a data science workflow, from data collection to model deployment.
+
+
 
