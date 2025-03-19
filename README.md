@@ -1,4 +1,18 @@
 # End-to-End-Data-Science-Project
+
+*COMPANY*: CODETECH IT SOLUTIONS
+
+*NAME* : K.VAISHNAVI
+
+*INTERN ID* : 
+
+*DOMAIN* : DATA SCIENCE
+
+*DURATION* : 4 WEEKS
+
+*MENTOR* : NEELA SANOTOSH
+
+
 ## Full Data Science Project: From Data Collection to Model Deployment
 In this project, we will develop a complete data science pipeline, starting from data collection and preprocessing to model training and deployment using Flask or FastAPI. The final deliverable will be a deployed API or web app showcasing the model's functionality.
 
